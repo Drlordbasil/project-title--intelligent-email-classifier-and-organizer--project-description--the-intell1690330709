@@ -2,13 +2,7 @@ import numpy as np
 
 
 def script(x, y, z):
-    result = []
-    for i in range(len(x)):
-        a = x[i] ** 2
-        b = y[i] ** 2
-        c = np.sqrt(a + b)
-        result.append(c - z)
-    return result
+    return np.sqrt(np.array(x)**2 + np.array(y)**2) - z
 
 
 x = [1, 2, 3, 4, 5]
